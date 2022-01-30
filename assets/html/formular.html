@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Formular</title>
+  </head>
+  <body class="height-xl">
+    <header class="header header-full width-lg center flex">
+      <a class="logo" href="../../index.html"><img src="../img/logo.svg" alt="-"></a>
+      <ul class="link-list flex">
+        <li><a class="link header-link transition" href="formular.html">Subscribe & Contact</a></li>
+        <li class="indent-item"><a class="link header-link transition" href="https://de-de.facebook.com/">facebook</a></li>
+        <li><a class="link header-link transition" href="https://twitter.com/?lang=de">Twitter</a></li>
+        <li><a class="link header-link transition" href="https://www.youtube.com/">Youtube</a></li>
+        <li class="indent-item"><a class="link header-link transition" href="#">DE</a></li>
+      </ul>
+    </header>
+    <main>
+      <aside>
+        <nav>
+          <ul class="side-nav flex">
+            <li class="side-nav-element flex">
+              <div class="circle"></div>
+              <a class="link side-nav-link transition" href="../../index.html">ABOUT</a>
+            </li>
+            <div class="vertical-line"></div>
+            <li class="side-nav-element flex">
+              <div class="circle"></div>
+              <a class="link side-nav-link transition" href="lounger.html">LOUNGER</a>
+            </li>
+            <div class="vertical-line"></div>
+            <li class="side-nav-element flex">
+              <div class="circle"></div>
+              <a class="link side-nav-link transition" href="experience.html">EXPERIENCE</a>
+            </li>
+            <div class="vertical-line"></div>
+            <li class="side-nav-element flex">
+              <div class="circle"></div>
+              <a class="link side-nav-link transition" href="inspiration.html">INSPIRATION</a>
+            </li>
+            <div class="vertical-line"></div>
+            <li class="side-nav-element flex">
+              <div class="circle"></div>
+              <a class="link side-nav-link transition" href="shop.html">SHOP</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <section class="full-section height-xl grid">
+        <img class="img full-img" src="../img/headphones.jpg" alt="-">
+        <article>
+          <h1 class="title form-title">Contact us</h1>
+          <form onsubmit="return false">
+            <label class="text" for="name">Name:</label>
+            <input class="form-name transition" type="text" name="name" id="input-name" required>
+            <label class="text" for="email">Email:</label>
+            <input class="form-email transition" type="email" name="email" id="input-email" required>
+            <label class="text" for="message">Message:</label>
+            <textarea class="form-message transition" name="message" id="input-message"></textarea>
+            <div>
+              <input class="form-checkbox" type="checkbox" name="newsletter" id="check-newsletter">
+              <label class="text" for="newsletter">Sign up for our Newsletter</label>
+            </div>
+            <input class="form-button transition" type="submit" value="Submit" id="submit-button" onclick="subscribe()">
+            <input class="form-button transition" type="reset" value="Reset">
+          </form>
+        </article>
+      </section>
+    </main>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,324 @@
+/*
+########################################
+                  Global
+########################################
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  background: #2e2e2e;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.width-sm {
+  width: 60%;
+}
+
+.width-lg {
+  width: 90%;
+}
+
+.width-xl {
+  width: 100%;
+}
+
+.height-xl {
+  height: 100vh;
+}
+
+.link {
+  font-size: 0.75rem;
+}
+
+.text,
+.side-nav-link {
+  color: rgb(115, 115, 115);
+}
+
+.transition {
+  transition: all 0.5s;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  place-items: center;
+}
+
+/*
+########################################
+                  Header
+########################################
+*/
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 5%;
+  padding: 1.5rem 0;
+}
+
+.link-list {
+  gap: 1.25rem;
+  color: #867772;
+}
+
+.indent-item {
+  margin-left: 3rem;
+}
+
+.header-link:hover {
+  color: #ebccc2;
+  border-bottom: 1px solid #ebccc2;
+}
+
+/*
+########################################
+                  Main
+########################################
+*/
+
+/*---------- Side-Navigation ----------*/
+/*#####################################*/
+
+.side-nav {
+  flex-direction: column;
+  gap: 0.5rem;
+  position: fixed;
+  top: 50%;
+  left: 2%;
+  transform: translateY(-50%);
+}
+
+.side-nav-link {
+  font-weight: 600;
+}
+
+.side-nav-link:hover,
+.current-link {
+  color: #fff;
+}
+
+.circle {
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 1px solid #867772;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+
+.circle-ring {
+  box-shadow: 0 0 0 3px #2e2e2e, 0 0 0 4px #fff;
+}
+
+.vertical-line {
+  height: 3.75rem;
+  border-left: 1px solid #867772;
+  margin-left: 0.35rem;
+  transform: translateY(-10%);
+}
+
+/*---------- Pages global ----------*/
+/*##################################*/
+
+.img,
+video {
+  width: 100%;
+}
+
+.title,
+.subtitle {
+  color: #ebccc2;
+  font-weight: 300;
+}
+
+.title {
+  font-size: 2.4rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.text {
+  line-height: 1.6rem;
+}
+
+.new-line {
+  margin: 1rem 0;
+}
+
+/*---------- Long-Page ----------*/
+/*###############################*/
+
+.split-title {
+  margin-bottom: 1.5rem;
+}
+
+/*---------- ABOUT ----------*/
+
+.main-title {
+  width: 30rem;
+  margin: 10rem 0 9rem 30%;
+}
+
+.title-img {
+  margin-bottom: 9rem;
+}
+
+.split-section-about {
+  width: 70%;
+  grid-template-columns: 44% 50%;
+  gap: 8rem;
+  margin-bottom: 12.5rem;
+}
+
+.img-about {
+  width: 31.25rem;
+  height: 26.25rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*---------- INSPIRATION ----------*/
+
+video {
+  margin: 10rem 0 9rem 0;
+}
+
+.bordered-text-wrapper {
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.bordered-text {
+  font-size: 0.6rem;
+  letter-spacing: 0.1rem;
+  border: 1px solid #fff;
+  padding: 0 0.4rem 0 0.5rem;
+}
+
+.split-section-inspiration {
+  grid-template-columns: 1fr 1fr;
+  margin: 6rem 0;
+}
+
+/*---------- One-Page ----------*/
+/*##############################*/
+
+.full-section {
+  grid-template-columns: 56% 44%;
+  place-items: center;
+}
+
+.full-title {
+  margin-bottom: 7rem;
+}
+
+.space-left {
+  width: 71%;
+  margin-left: 3rem;
+}
+
+.full-img {
+  aspect-ratio: 6 / 6.1;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*---------- SHOP ----------*/
+
+.shop {
+  text-align: center;
+}
+
+.headphone-title {
+  font-size: 1.75rem;
+}
+
+.buy-btn {
+  background: #ebccc2;
+  letter-spacing: 0.2rem;
+  padding: 0.75rem 1.5rem;
+}
+
+.buy-btn:hover {
+  background: #867772;
+}
+
+/*---------- Formular ----------*/
+/*##############################*/
+
+.form-title {
+  margin: 3rem 0;
+}
+
+input,
+textarea {
+  background: hsl(0, 0%, 70%);
+  outline: none;
+}
+
+.form-name,
+.form-email,
+.form-message {
+  display: block;
+  width: 30vw;
+  height: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  background: hsl(0, 0%, 55%);
+}
+
+.form-message {
+  height: 10rem;
+}
+
+.form-button {
+  width: 5rem;
+  background: hsl(0, 0%, 55%);
+  border: 1px solid #000;
+  padding: 0.5rem 1rem;
+  margin-top: 2.5rem;
+}
+
+.form-button:hover {
+  background: hsl(0, 0%, 70%);
+}
+
+/*
+########################################
+              Media-Queries
+########################################
+*/
